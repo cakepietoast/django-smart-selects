@@ -100,8 +100,9 @@ function fill_field(relatedTo, relatedSelect, callback) {
             relatedSelect.find('option:first').attr('selected', 'selected');
         }
         relatedSelect.trigger('change');
-    });
-    if (typeof callback !== 'undefined') {
+        if (typeof callback !== 'undefined') {
         callback();
     }
+    });
+
 }
